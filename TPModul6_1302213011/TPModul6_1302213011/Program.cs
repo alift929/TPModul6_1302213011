@@ -3,8 +3,9 @@ public class Program
 {
     public static void Main()
     {
-        var STB = new SayaTubeVideo("Tutorial Design By Contract - Alif Taufiqurrahman");
+        SayaTubeVideo STB = new SayaTubeVideo("Tutorial Design By Contract - Alif Taufiqurrahman");
         STB.IncreasePlayCount(2);
         STB.PrintVideoDetails();
+        STB.IncreasePlayCount(2147483647); //max int
     }
 }
